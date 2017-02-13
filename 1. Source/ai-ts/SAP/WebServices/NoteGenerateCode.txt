@@ -1,0 +1,45 @@
+1. MasterData
+ replace:
+ public MasterData()
+    {
+        String urlSetting = System.Configuration.ConfigurationManager.AppSettings["MasterDataWSURL"];
+        if (String.IsNullOrEmpty(urlSetting))
+            this.Url = "http://demo1.w4vn.com/MasterData.asmx";
+        else
+            this.Url = urlSetting;
+    }
+2. GetDefault:
+add:
+namespace SAP
+{}
+Replace:
+public GetDefault()
+        {
+            String urlSetting = System.Configuration.ConfigurationManager.AppSettings["GetDefaultWSURL"];
+            if (String.IsNullOrEmpty(urlSetting))
+                this.Url = "http://demo1.w4vn.com/GetDefault.asmx";
+            else
+                this.Url = urlSetting;
+        }
+3.Transaction:
+add:
+namespace SAP.WebServices
+{}
+replace:
+public Transaction()
+        {
+            String urlSetting = System.Configuration.ConfigurationManager.AppSettings["TransactionWSURL"];
+            if (String.IsNullOrEmpty(urlSetting))
+                this.Url = "http://localhost:49881/Transaction.asmx";
+            else
+                this.Url = urlSetting;
+        }
+4.Reports
+Replace:
+ public Reports() {
+        String urlSetting = System.Configuration.ConfigurationManager.AppSettings["ReportsWSURL"];
+        if (String.IsNullOrEmpty(urlSetting))
+            this.Url = "http://demo1.w4vn.com/GetDefault.asmx";
+        else
+            this.Url = urlSetting;
+    }

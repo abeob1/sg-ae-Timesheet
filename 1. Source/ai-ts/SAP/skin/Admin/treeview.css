@@ -1,0 +1,107 @@
+﻿div.AspNet-TreeView {
+    margin: 0;
+    padding: 0;
+}
+
+div.AspNet-TreeView ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.AspNet-TreeView-Show {
+}
+
+.AspNet-TreeView-Hide{
+    display:none;
+}
+
+
+div.AspNet-TreeView ul li {
+    white-space: nowrap;
+    padding: 3px 0 2px 0; 
+    font-size: small;
+    font-family: Tahoma;
+}
+
+div.AspNet-TreeView ul ul {
+    margin: 2px 0 2px 12px;
+}
+
+div.AspNet-TreeView ul li img {
+    border: none;
+    vertical-align: middle;
+    margin: 0 4px 0 0;
+}
+
+div.AspNet-TreeView li a {
+    text-decoration: none;
+    padding-left:4px;
+}
+
+div.AspNet-TreeView li.AspNet-TreeView-Root {
+    /*
+    background:url(bg-fade-light.png) repeat-x bottom;
+    border-top: solid 1px #E7E7E7;
+    border-right: solid 1px #D2D2D2;
+    border-bottom: solid 1px #D2D2D2;
+    border-left: solid 1px #E7E7E7;
+    */
+    margin:0 4px 6px 0;
+}
+
+div.AspNet-TreeView li.AspNet-TreeView-Parent {
+    /*
+    background:url(bg-fade-light.png) repeat-x bottom;
+    border-top: solid 1px #E7E7E7;
+    border-right: solid 1px #D2D2D2;
+    border-bottom: solid 1px #D2D2D2;
+    border-left: solid 1px #E7E7E7;
+    */
+    margin:0 4px 6px 0;
+}
+
+div.AspNet-TreeView li.AspNet-TreeView-Leaf {
+    margin-left: 12px;
+}
+
+div.AspNet-TreeView .AspNet-TreeView-Collapse {
+    position: relative;
+    background: url(collapse.gif) 0 -1px no-repeat;
+    width: 15px;
+    float:left;
+    cursor: pointer;    
+    font-family: Courier;
+    font-size: xx-large;
+    line-height: 20px;
+}
+
+div.AspNet-TreeView .AspNet-TreeView-Expand {
+    position: relative;
+    background: url(expand.gif) 0 -1px no-repeat;
+    width: 15px;
+    float:left;
+    cursor: pointer;
+    font-family: Courier;
+    font-size: xx-large;
+    line-height: 20px;
+}
+
+div.AspNet-TreeView a,
+div.AspNet-TreeView a:visited,
+div.AspNet-TreeView a:active,
+div.AspNet-TreeView a:hover,
+div.AspNet-TreeView a:link {
+    color: #00008B;
+}
+
+div.AspNet-TreeView .AspNet-TreeView-Selected a {
+    font-weight: bold !important;
+    color: #006400 !important;
+}
+
+div.AspNet-TreeView .AspNet-TreeView-Selected ul a {
+    font-weight: normal !important;
+    color: #00008B !important;
+}

@@ -1,0 +1,215 @@
+/*
+    $Id: notifiers.css,v 1.2 2006/07/15 16:28:03 thanh.an Exp $
+*/
+form .Highlighted {
+
+    background-color: #FAEDB8;
+
+}
+
+
+
+/* ALERT BOX */
+
+div#alertBox {
+
+    width: 45ex;
+
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+
+    -moz-box-sizing: border-box;
+
+    position: absolute;
+
+    display: none;
+
+}
+
+div.TB {
+
+    padding-top: 20px;
+
+    background-image: url(images/arrow-top.gif);
+
+}
+
+div.BT {
+
+    padding-bottom: 20px;
+
+    background-image: url(images/arrow-bottom.gif);
+
+}
+
+div.LR {
+
+    padding-left: 20px;
+
+    background-image: url(images/arrow-left.gif);
+
+}
+
+div.RL {
+
+    padding-right: 20px;
+
+    background-image: url(images/arrow-right.gif);
+
+}
+
+
+
+div.TBxLL {
+
+    background-position: 0% 0%;
+
+}
+
+div.TBxCC {
+
+    background-position: 50% 0%;
+
+}
+
+div.TBxRR {
+
+    background-position: 100% 0%;
+
+}
+
+
+
+div.BTxLL {
+
+    background-position: 0% 100%;
+
+}
+
+
+
+div.BTxCC {
+
+    background-position: 50% 100%;
+
+}
+
+
+
+div.BTxRR {
+
+    background-position: 100% 100%;
+
+}
+
+
+
+div.TTxRL {
+
+    background-position: 100% 0%;
+
+}
+
+div.MMxRL {
+
+    background-position: 100% 50%;
+
+}
+
+div.BBxRL {
+
+    background-position: 100% 100%;
+
+}
+
+
+
+div.TTxLR {
+
+    background-position: 0% 0%;
+
+}
+
+div.MMxLR {
+
+    background-position: 0% 50%;
+
+}
+
+div.BBxLR {
+
+    background-position: 0% 100%;
+
+}
+
+
+
+div#alertBox div {
+
+    background-color: #FAEDB8;
+
+    padding: 1.5ex;
+
+    border: solid 1px #AA8A0D;
+
+    -moz-border-radius: 1.5ex;
+
+}
+
+div#alertBox input {
+
+    border: none;
+
+    display: block;
+
+    float: right;
+
+    width: 16px;
+
+    height: 16px;
+
+    overflow: hidden;
+
+    text-indent: 100px;
+
+    background-image: url(images/close-small.gif);
+
+    background-position: 0% 0%;
+
+    background-repeat: no-repeat;
+
+    margin-top: -2px;
+
+    cursor: hand;
+
+    cursor: pointer;
+
+}
+
+div#alertBox input:hover {
+
+    background-image: url(images/close-small-hover.gif);
+
+}
+
+div#alertBox h3 {
+
+    margin: 0px;
+
+    margin-top: 0px;
+
+    font-size: 1em;
+
+    border-bottom: solid 1px #666;
+
+}
+
+div#alertBox p {
+
+    margin: 0px;
+
+    margin-top: .5em;
+
+}
+

@@ -1,0 +1,161 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="SAP.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="/js/splitter.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/dialog.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/accordion.js"></script>
+    <link href="skin/start/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="skin/skin.css" rel="stylesheet" type="text/css" />
+    <link href="skin/menu.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+    jQuery().ready(function () {
+        jQuery('#theMenu').Accordion({
+            active: 'h3.selected',
+            header: 'h3.head',
+            alwaysOpen: false,
+            animated: true,
+            showSpeed: 400,
+            hideSpeed: 800
+        });
+        jQuery('.xtraMenuClass').Accordion({
+            active: 'h4.selected',
+            header: 'h4.head',
+            alwaysOpen: false,
+            animated: true,
+            showSpeed: 400,
+            hideSpeed: 800
+        });
+        $('.splitbarV').each(function () {
+            var $ids = $('[class=splitbarV]');
+            if ($ids.length > 1) {
+                $ids.not(':first').remove();
+            }            
+        });
+    });	
+</script>
+</head>
+<body>
+    <form id="form1" runat="server" method="post"  enctype="multipart/form-data">
+    <asp:ScriptManager ID="ScriptManagerMain" runat="server">
+    </asp:ScriptManager>
+    <input type="hidden" id="isMainPage" value="1" />
+    <div class="clear"></div>   
+    <div id="splitterContainer"  >       
+        <div id="leftPane">
+        <div>
+            <asp:Image Width="100px" ID = "Image2" ImageUrl="~/skin/images/Abeo Logo.png" runat="server" />
+            <div id="login-logout" style="margin-top: 40px;">
+                <%--<asp:LoginName ID="LoginName1" runat="server" />--%>
+                <a href="/Homepage.aspx">Home</a>
+                <%--<a href="/Admin/UserProfiles.aspx">User Management</a>--%>
+                
+                <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggedOut="LoginStatus1_LoggedOut"/>
+            </div>
+            <div style="font-family: Tahoma; font-size: x-small; color: #0000FF; font-weight: bold">
+            Welcome, <asp:LoginName ID="LoginName1" runat="server" />
+            You are in <asp:Label ID="lblCompany" runat="server" text=""/>
+            </div>
+        </div>
+        <ul id="theMenu">
+            <li>
+                 <h3 class="head">
+                    <a href="#"><img alt="" width="15px" src="/Admin/icon/partner.png" />&nbsp;Timesheet</a>
+                </h3>
+				 <ul>
+                     <li>
+                            <ul>
+				                <li><a href="/TimeSheet/WeekendTimeSheet.aspx?opt=0">Weekly Entry</a></li>
+                                <li><a href="/TimeSheet/MyTimeSheet.aspx">My Entry</a></li>
+                                <li><a href="/TimeSheet/WeekendTimeSheet.aspx?opt=1">Submit for PM Approval</a></li>
+                                <li id="PendingApproval" runat="server"><a href="/TimeSheet/Pending4ApprTimeSheet.aspx">Pending for Approval by Weekly</a></li>
+                                <li id="PendingApprovalByPeriod" runat="server"><a href="/TimeSheet/Pending4ApprTimeSheetByPeriod.aspx">Pending for Approval by Period</a></li>
+                                <li id="ResourcesPlanning" runat="server"><a href="/TimeSheet/ResourcesPlanning.aspx">Resources Planning</a></li>
+                                <li id="ProjectMandaysUsedReport" runat="server"><a href="/TimeSheet/ProjectMandaysUsedReport.aspx">Project Man-days Used Report</a></li>
+                                <li id="ProjectMandaysUsedByPhaseReport" runat="server"><a href="/TimeSheet/ProjectMandaysUsedByPhaseReport.aspx">Project Man-days Used By Phase Report</a></li>
+                                <li id="ChangePassword" runat="server"><a href="/ChangePassword.aspx">Change My Password</a></li>
+			                </ul>
+                            <ul id="Ul1" class="xtraMenuClass" style="display:none">
+                        	<li>
+                                <h4 class="head"><a href="#">User Management</a></h4>
+                                <ul>
+                                    <li><a class="subitem" href="/Admin/SystemUserEdit.aspx?UserName=<% = Context.User.Identity.Name %>">User Profiles</a></li>
+                                    <li><a class="subitem" href="/Admin/SystemUsers.aspx">System User</a></li>
+                                    <li><a class="subitem" href="/Admin/SystemRoles.aspx">System Roles</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>      
+                </ul>
+            </li>
+			<li id="adminmenu" runat="server">
+				<h3 class="head">
+                    <a href="#">
+                        <img alt="" width="15px" src="/skin/Admin/partner.png" />&nbsp;Administration
+                    </a>
+                </h3>
+				<ul>
+                     <li>
+                        <ul>
+				            <li><a href="/TimeSheet/TimeEntryPost2SAP.aspx">Post Timesheet To SAP</a></li>
+                            <li><a href="/TimeSheet/TimesheetPosting.aspx">Timesheet Posting Period Status</a></li>
+                            <li><a href="/TimeSheet/ProjectManager.aspx">Project Manager</a></li>
+                            <li><a href="/TimeSheet/DirectExpenseEntry.aspx">Direct Expense Entry</a></li>
+                            <li><a href="/TimeSheet/SubcontractorExpenseEntry.aspx">Sub-contractor Expense Entry</a></li>
+                            <li><a href="/Admin/SystemUsers.aspx">Users</a></li>
+			            </ul>
+                    </li>      
+                </ul>
+			</li>
+
+            <li id="mnreport" runat="server">
+				<h3 class="head">
+                    <a href="#">
+                        <img alt="" width="15px" src="/skin/Admin/partner.png" />&nbsp;Reports
+                    </a>
+                </h3>
+				<ul>
+                     <li>
+                            <ul>
+				                <li><a href="/TimeSheet/TimeEntryReport.aspx">Timesheet Reports</a></li>
+                                <li><a href="/TimeSheet/TimeMyEntryReport.aspx">My Pending for Approval Report</a></li>
+                                <li><a href="/TimeSheet/TimeEntryMissingReport.aspx">Summary of Timesheet Approved</a></li>
+                                <li><a href="/TimeSheet/TimeEntrySummaryReportByProject.aspx">Timesheet Summary by Project</a></li>
+                                <li><a href="/Reports/SummaryOfTimesheetDailyReport.aspx">Summary of Timesheet Daily View</a></li>
+			                </ul>
+                          
+                    </li>      
+                </ul>
+			</li>
+		</ul>
+
+       </div>
+        <div id="rightPane">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div id="bottomMessage" style="width:100%; height:10%; position:absolute; bottom:0px;">
+        <span>Message : </span><span id="customeMessage"></span>
+    </div>
+    <div id="dialogFrame">
+        <iframe id="iframeItem" width="100%" height="100%" frameborder="0" marginwidth="0"
+            marginheight="0"></iframe>
+    </div>
+    <div id="progressloader">
+        <div id="progressloader_dialog" class="progressloader_window">
+            <asp:Image ID="Image1" runat="server" Height="42" Width="42" ImageUrl="~/skin/images/ajax-loader.gif" />
+        </div>
+        <div id="progressloader_mask">
+        </div>
+    </div>
+    </form>
+</body>
+</html>

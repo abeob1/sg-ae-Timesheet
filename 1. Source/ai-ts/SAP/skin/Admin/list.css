@@ -1,0 +1,242 @@
+﻿/* Grid */
+div.AspNet-GridView {
+	margin-bottom: 1em;
+	margin-right: 2px;
+	padding-top: 0.7em;	
+}
+
+table.PermissionGrid {
+  width: 45%;
+  border: #FFFFFF solid 0.1em;
+  border-collapse: collapse;
+  border-bottom: 1px solid #7ea0e6;
+  border-left: 1px solid #7ea0e6; 
+  padding-left: 5px; 
+  font-family: Tahoma;    
+}
+
+table.PermissionGrid tr.Head {
+  background-color: #B6CBEF;
+  height: 2em;
+  font-weight: bold;
+}
+
+table.PermissionGrid .Head td, 
+table.PermissionGrid .Head th {
+  border-width: 0;
+  padding: 0.2em 0;
+  border-bottom: #500002 solid 0.2em;
+  border-right: #7ea0e6 solid 0.1em;
+  text-align: center;
+}
+
+table.PermissionGrid .PermissionOddRow td,
+table.PermissionGrid .PermissionEvenRow td {
+  border-right: #7ea0e6 solid 0.1em;
+  text-align: left;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+}
+
+table.PermissionGrid .PermissionEvenRow td {
+  background-color: #f9f8fd;
+}
+
+table.PermissionGrid .PermissionOddRow td {
+  background-color: #ffffff;
+}
+
+
+table.Grid {
+  width: 100%;
+  border: #FFFFFF solid 0.1em;
+  border-collapse: collapse;
+  border-bottom: 1px solid #7ea0e6;
+  font-family: Tahoma;    
+}
+
+
+table.Grid tr.Head {
+  background-color: #B6CBEF;
+  height: 2em;
+  font-weight: bold;
+}
+
+table.Grid .Head td, 
+table.Grid .Head th {
+  border-width: 0;
+  padding: 0.2em 0;
+  border-bottom: #500002 solid 0.2em;
+  border-right: #7ea0e6 solid 0.1em;
+  text-align: center;
+}
+
+table.Grid .OddRow td,
+table.Grid .EvenRow td {
+  border-right: #7ea0e6 solid 0.1em;
+  text-align: center;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+}
+
+
+table.Grid td.AlignLeft {
+	text-align: left;
+}
+
+table.Grid td.AlignRight {
+	text-align: right;
+}
+
+table.Grid a:link,
+table.Grid a:visited {
+  text-decoration: none;
+  color: Blue;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+table.Grid .EvenRow td {
+  background-color: #f9f8fd;
+}
+
+table.Grid .OddRow td {
+  background-color: #ffffff;
+}
+
+.AccessCheckBoxColumn {
+    margin-left : 40px;
+}
+
+.PermissionHeaderColumn
+{
+	text-align: left !important;    
+    margin-left : 40px;   
+}
+
+.CheckBoxColumn {
+    width: 4%;
+    text-align: center !important;    
+}
+/*End Grid*/
+
+/* Pager */
+
+div.Pager {
+    /*
+	float: right;
+*/
+	margin-right: 1em;
+	margin-top: 0.7em;
+	text-align: right;
+}
+
+div.Pager div.Summary {
+    float: left;
+    text-align: left;
+    line-height: 20px;
+}
+
+div.Pager div.GotoPage {
+    float: right;
+}
+
+
+div.Pager span {	
+    margin-left: 10px;
+    margin-right: 10px;	
+}
+/*
+table.Grid tr.Pager {
+  background-color: #B6CBEF;
+  height: 2em;
+  font-weight: bold;
+}
+table.Grid .Pager td {
+  border-width: 0;
+  padding: 0.2em 0;
+  border-right: #7ea0e6 solid 0.1em;
+}
+
+table.Grid .Pager td table td {
+  border-right: none;
+}
+*/
+
+/* End pager */
+
+/* Options Bar */
+.OptionsBar {        
+    margin-top: 0.7em;
+    margin-left: 0.2em;
+}
+/* End Options Bar */
+
+/* Edit Grid */
+
+table.EditGrid {
+	width: 99%;	
+	font-family: Tahoma;
+	font-size: 1em;
+	margin-bottom: 1em;
+	margin-top: 0.7em;
+}
+
+table.EditGrid thead tr th {
+	text-align: left;
+	background-color: #B6CBEF;
+	border-right: #ffffff solid 0.2em;
+	padding-left: 0.4em;
+	height: 2em;
+}
+
+table.EditGrid tr td {
+	padding-left: 0.3em;
+	padding-top: 0.3em;
+	padding-right: 0.1em;
+}
+
+table.EditGrid tr td.NameColumn {
+	width: 16.8em;
+}
+
+
+table.EditGrid tr td input.Name {
+	width: 15em;
+}
+
+table.EditGrid tr td input.Value {
+	width: 20em;
+}
+
+table.EditGrid tr td input.Description {
+	width: 20em;
+}
+
+/* End of Edit Grid */
+
+div.RightButton {
+	float: right;	
+	margin-right: 1em !important;
+	margin-top: 0 !important;
+}
+
+.RepeaterItemColor
+{
+    height: 20px;
+    background-color: #F0F0F0;
+    text-align:left;
+}
+.RepeaterAlterItemColor
+{
+    height: 20px;
+    background-color: #FFFFEC;
+    text-align:left;
+}
+.ItemHeight
+{
+    height:20px;
+    text-align:left;
+}

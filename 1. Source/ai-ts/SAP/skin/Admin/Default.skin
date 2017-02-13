@@ -1,0 +1,123 @@
+<asp:ImageButton runat="server" SkinID="CalendarImageButton" ImageUrl="~/Resources/Images/minical.gif" />
+
+<data:EntityGridView runat="server"
+			AllowPaging="true"
+			AllowSorting="true"            
+			AllowMultiColumnSorting="false"
+			AllowExportToExcel = "false"
+			PageSize="30"
+			PageSelectorPageSizeInterval="10"
+            SortDescImageUrl="~/Resources/Images/sortdescending.gif"
+            SortAscImageUrl="~/Resources/Images/sortascending.gif"
+            CellPadding="3" CellSpacing="0"			
+			HeaderStyle-CssClass="Head"
+			PagerStyle-CssClass="Pager"
+			RowStyle-CssClass="OddRow"
+			AlternatingRowStyle-CssClass="EvenRow"
+			CssClass="Grid"
+			GridLines="None"			
+			/>			
+			
+<data:EntityGridView runat="server"
+            SkinID="messageDetailReportSkin"
+			AllowPaging="true"
+			AllowSorting="false"            
+			AllowMultiColumnSorting="false"
+			AllowExportToExcel = "false"
+			PageSize="30"
+			PageSelectorPageSizeInterval="10"
+            CellPadding="3" CellSpacing="0"			
+			HeaderStyle-CssClass="Head"
+			PagerStyle-CssClass="Pager"
+			RowStyle-CssClass="OddRow"
+			AlternatingRowStyle-CssClass="EvenRow"
+			CssClass="Grid"
+			GridLines="None"			
+			/>			
+
+<asp:gridview runat=server
+			HeaderStyle-CssClass="Head"
+			PagerStyle-CssClass="Pager"
+			RowStyle-CssClass="OddRow"
+			AlternatingRowStyle-CssClass="EvenRow"
+			CssClass="Grid"
+			GridLines="None"
+            />
+
+<asp:gridview runat=server
+            SkinID="rolePermissionGridViewSkin" 
+            Rowstyle-horizontalalign="Left"  
+			HeaderStyle-CssClass="Head"
+			PagerStyle-CssClass="Pager"
+			RowStyle-CssClass="PermissionOddRow"
+			AlternatingRowStyle-CssClass="PermissionEvenRow"
+			CssClass="PermissionGrid"
+			GridLines="None"
+            />
+
+<asp:gridview runat=server
+            SkinID="connectionSessionGridViewSkin"
+			HeaderStyle-CssClass="Head"
+			PagerStyle-CssClass="Pager"
+			RowStyle-CssClass="OddRow"
+			AlternatingRowStyle-CssClass="EvenRow"
+			CssClass="Grid ConnectionSession"
+			GridLines="None"
+            />
+
+
+<data:EntityGridView runat="server"
+            SkinID="noPagingSkin"
+            SortDescImageUrl="~/Resources/Images/sortdescending.gif"
+            SortAscImageUrl="~/Resources/Images/sortascending.gif"
+			AllowPaging="false"
+			AllowSorting="true"			
+			AllowMultiColumnSorting="false"			
+            CellPadding="3" CellSpacing="0"			
+			HeaderStyle-CssClass="Head"
+			PagerStyle-CssClass="Pager"
+			RowStyle-CssClass="OddRow"			
+			AlternatingRowStyle-CssClass="EvenRow"
+			CssClass="Grid"
+			GridLines="None"
+			/>
+
+<data:EntityGridView runat="server"
+            SkinID="MySkin"
+			AllowPaging="false"
+			AllowSorting="true"
+			AllowMultiColumnSorting="false"
+			AllowExportToExcel  = "false"			
+			PageSize="1000"
+			PageSelectorPageSizeInterval="10"
+            SortDescImageUrl="~/Resources/Images/sortdescending.gif"
+            SortAscImageUrl="~/Resources/Images/sortascending.gif"
+            CellPadding="3" CellSpacing="0"			
+			HeaderStyle-CssClass="Head"
+			PagerStyle-CssClass="Pager"
+			RowStyle-CssClass="OddRow"			
+			AlternatingRowStyle-CssClass="EvenRow"
+			CssClass="Grid"
+			GridLines="None"
+			/>
+
+<asp:DataGrid runat="server"			
+			AllowSorting="true"			
+            CellPadding="3" CellSpacing="0"			
+			RowStyle-CssClass="OddRow"
+			AlternatingRowStyle-CssClass="EvenRow"
+			CssClass="Grid"
+			GridLines="None"
+			>
+	<HeaderStyle CssClass="Head" />
+	<ItemStyle CssClass="OddRow" />
+    <AlternatingItemStyle CssClass="EvenRow" />
+</asp:DataGrid>
+
+<asp:DropDownList runat="server" CssClass="DropDownList" />
+
+<asp:LinkButton CssClass="linkbutton-tab" SkinID="cmdUserEdit" runat="server"></asp:LinkButton>
+<asp:RadioButtonList runat="server" CssClass="radiobuttonlist"></asp:RadioButtonList>
+
+<asp:CheckBoxList CssClass="radiobuttonlist" runat="server" RepeatColumns="4" />
+<asp:Button CssClass="Button" runat="server" />

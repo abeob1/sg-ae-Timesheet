@@ -1,0 +1,314 @@
+﻿
+/*
+  @author: $$Le Thanh Hung$$
+  Start Date: December 05 2006
+*/
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Tahoma, Arial;
+  font-size: 70%;
+  background-image: url(nav-bg-repeat.jpg);
+  background-repeat: repeat-y;
+}
+
+input, textarea, select {
+	font-family: Tahoma, Arial;	
+	font-size: 1.2em;
+}
+
+.Scroll {
+    overflow: scroll;
+}
+
+table {
+  font-size: 1.2em;
+}
+
+table input {
+	font-size: 1em;
+}
+
+div.Clear {
+  clear: both;
+}
+
+.Virtual {
+  display: none;
+}
+
+strong.RequiredField {
+    color: red;    
+}
+
+label {
+    color: gray;
+    font-weight: bold;
+}
+
+fieldset {
+    border: 0;
+    padding: 0px;
+}
+
+fieldset legend {
+    display: none;
+}
+
+#theForm {
+  padding: 0px;
+  margin: 0px;
+}
+#header {
+  background-color: #4E7DD1;
+  height: 36px;
+  width: 1066px;
+}
+#header h1 {
+  font-family: Times New Roman;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  margin: 0px;
+  padding: 8px 0px 0px 10px;
+  height: 30px;
+  float: left;
+  /* background-image: url(sitelogo.gif); 
+  background-repeat: no-repeat;
+  background-position: 0px 5px;*/
+}
+#header #settingNav {
+  float: right;
+  padding-top: 5px;
+}
+#header #settingNav ul {
+  margin: 0px;
+}
+#header #settingNav ul li {
+  display: inline;
+}
+#header #settingNav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+}
+#header #settingNav ul li a:hover {
+  text-decoration: underline;
+}
+#navigator {
+  background-image: url(topgrad.gif);
+  border-top: solid 1px #7795CB;
+  padding: 2px;
+  width: 1062px;
+}
+#navigator div {
+  height: 1.5em;
+}
+#navigator ul {
+  padding: 0px;
+  margin: 0px;
+}
+#navigator ul li {
+  display: inline;
+}
+#navigator ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0px .7em 2px .7em;  
+}
+#navigator ul li a:hover {
+  text-decoration: underline;
+}
+#navigator ul li.Current a {
+  background-image: url(nav-item-bg.jpg);
+  border: solid 1px;
+  border-color: #00238B #578CEB #578CEB #00238B;
+  color: #131FA5;  
+}
+#navigator ul li.Current a:hover {
+  text-decoration: none;
+}
+#title {
+  height: 50px;
+  border-top: solid 3px #4E7DD1;
+  border-bottom: solid 1px #D8E0EB;
+  background-color: white;
+  width: 1066px;
+}
+#title #titleLogo {
+  width: 180px;
+  text-align: center;
+  float: left;
+  background-image: url(headcornerp.gif);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+}
+#title #titleLogo h2 {
+  margin: 0px;
+  width: 180px;
+  height: 49px;
+  background-image: url(spssites.gif);
+  background-repeat: no-repeat;
+  background-position: 65px 0px;
+}
+#title #titleText {
+  float: left;
+  padding-top: 10px;
+  font-family: Verdana;
+}
+#title #titleText h3.Repeat {
+  margin: 0px;
+  font-weight: normal;
+  font-size: 1.4em;
+  color: black;
+}
+#title #titleText h3 {
+  margin: 0px;
+  color: #131FA5;
+  font-size: 1.2em;
+}
+#title #titleForm {
+  float: right;
+  padding: 0px 0px 0px 6px;
+  background-color: #4E7DD1;
+  background-image: url(headcornerx.jpg);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+}
+#title #searchForm {
+  margin: 0px;
+  padding: .2em .4em .4em .5em;
+  background-image: url(headcornerz.jpg);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+#title #searchForm * {
+  vertical-align: middle;
+}
+#title #progressBar {	
+	float: right;
+}
+
+#mainArea {  
+}
+
+#mainArea #sideBar {
+  float: left;
+  width: 180px;
+}
+
+#mainArea #sideBar h5 {
+  font-weight: bold;
+  margin: 0px;
+  font-size: 1.1em;
+}
+
+#mainArea #content {
+  position: absolute;  
+  left: 190px;
+  right: 0px;
+  width: 880px;
+  /* margin-left: 180px; */
+  clear: right;
+}
+
+/* Separator */
+div.Separator {
+  border-bottom: 1px outset lightgrey;
+}
+
+
+.LoginName
+{
+	font-weight: bold;
+	color: White;
+	margin-right: 10px;
+}
+/**
+ * style for MessageBox(information/warning/error/announce) 
+ */
+div.MessageBox {
+    font-weight: bold;
+    padding: 0.5em 0em 0.1em 0em;
+    margin-right: 10px;
+}
+div.MessageBox .Information,
+div.MessageBox .Announcement,
+div.MessageBox .Warning,
+div.MessageBox .Error {
+    padding: 0.5em 1em 1em 3.5em;
+    background-position: 0.7em 0.5em !important;
+    background-repeat: no-repeat;
+    -moz-border-radius: 0.5em;
+}
+div.MessageBox .Information {    
+    background-image: url(information.png);
+    background-color: #E9F6FF;
+    border: solid 1px #667E98;    
+}
+div.MessageBox .Announcement {
+    background-image: url(Announcement.gif);
+    background-color: #E9F6FF;
+    border: solid 1px #667E98;
+}
+div.MessageBox .Warning {
+    background-image: url(warning24.png);	
+    background-color: #FDFFE9;
+    border: solid 1px #FF960A;
+}
+div.MessageBox .Error {
+    background-image: url(critical24.png);	
+    background-color: #F7EDEC;
+    border: solid 1px #BC3D44;
+}
+/* End style for MessageBox(information/warning/error/announce) */
+
+
+
+/* Style for button */
+
+input.Button {
+    /*border: solid 2px #718FC3;
+    background-color: #FFFFFF;
+    color: #96A8CC;
+    font-weight: bold;*/
+}
+
+input.Button:hover {
+    /*
+    background-color: #CDFEFC;    
+    */
+}
+
+input.Disable {
+    /*border: solid 2px #C1C1B5;
+    background-color: #F2F2E8;
+    color: #C1C1B5;
+    font-weight: bold;*/
+}
+/* End Style for button */
+
+table.yPeKeyTable {
+  font-size: 1.2em;
+}
+
+table.yPeKeyTable tr {
+  height:30px;
+}
+
+table.yPeKeyTable td {
+  width:40px;
+  text-align:center;
+  padding-left:10px;
+}
+
+table.yPeKeyTable td input {
+  width:40px;
+  text-align:center;
+}
+.Width150 {
+	width: 350px;
+}

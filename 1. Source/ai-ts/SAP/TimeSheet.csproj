@@ -1,0 +1,684 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6DBBFF8-81C0-42E1-914F-EB6DA7EA98F0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAP</RootNamespace>
+    <AssemblyName>SAP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+    <PlatformTarget>x86</PlatformTarget>
+    <DeployIisAppPath>SBOWEB</DeployIisAppPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CKEditor.NET, Version=3.6.4.0, Culture=neutral, PublicKeyToken=e379cdf2f8354999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\SystemRoleEdit.aspx" />
+    <Content Include="Admin\SystemRoles.aspx" />
+    <Content Include="Admin\SystemUserEdit.aspx" />
+    <Content Include="Admin\SystemUsers.aspx" />
+    <Content Include="Admin\user_style.css" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="Popup_MoreInfo.aspx" />
+    <Content Include="Popup_CreatePeriod.aspx" />
+    <Content Include="Popup_UserList.aspx" />
+    <Content Include="Popup_MultiProject.aspx" />
+    <Content Include="Popup_EditProject.aspx" />
+    <Content Include="Reports\SummaryOfTimesheetDailyReport.aspx" />
+    <Content Include="SimpleLogin.aspx" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\dialog.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\menu.js" />
+    <Content Include="skin\AdminLogin.css" />
+    <Content Include="skin\Admin\ajaxtabs.css" />
+    <Content Include="skin\Admin\Announcement.gif" />
+    <Content Include="skin\Admin\arrow-down-title-on.jpg" />
+    <Content Include="skin\Admin\arrow-down-title.jpg" />
+    <Content Include="skin\Admin\arrow-up-title-on.jpg" />
+    <Content Include="skin\Admin\arrow-up-title.jpg" />
+    <Content Include="skin\Admin\bg-fade-light.png" />
+    <Content Include="skin\Admin\bg_table.gif" />
+    <Content Include="skin\Admin\calendar-system.css" />
+    <Content Include="skin\Admin\calendar.gif" />
+    <Content Include="skin\Admin\carrier-icon.gif" />
+    <Content Include="skin\Admin\close-popup.jpg" />
+    <Content Include="skin\Admin\collapse.gif" />
+    <Content Include="skin\Admin\corner_bl.gif" />
+    <Content Include="skin\Admin\corner_br.gif" />
+    <Content Include="skin\Admin\corner_tl.gif" />
+    <Content Include="skin\Admin\corner_tr.gif" />
+    <Content Include="skin\Admin\critical24-bak.gif" />
+    <Content Include="skin\Admin\critical24.gif" />
+    <Content Include="skin\Admin\critical24.png" />
+    <Content Include="skin\Admin\Default.css" />
+    <Content Include="skin\Admin\down.gif" />
+    <Content Include="skin\Admin\edit.css" />
+    <Content Include="skin\Admin\editdoc.gif" />
+    <Content Include="skin\Admin\expand.gif" />
+    <Content Include="skin\Admin\go-back.gif" />
+    <Content Include="skin\Admin\go-first.gif" />
+    <Content Include="skin\Admin\go-last.gif" />
+    <Content Include="skin\Admin\go-next.gif" />
+    <Content Include="skin\Admin\headcornerp.gif" />
+    <Content Include="skin\Admin\headcornerx.jpg" />
+    <Content Include="skin\Admin\headcornerz.jpg" />
+    <Content Include="skin\Admin\icongo01.gif" />
+    <Content Include="skin\Admin\icon_alert.gif" />
+    <Content Include="skin\Admin\information-bak.gif" />
+    <Content Include="skin\Admin\information.png" />
+    <Content Include="skin\Admin\leftNavigation.css" />
+    <Content Include="skin\Admin\list.css" />
+    <Content Include="skin\Admin\loop_blue.gif" />
+    <Content Include="skin\Admin\loop_blue_top.gif" />
+    <Content Include="skin\Admin\nav-bg-repeat.jpg" />
+    <Content Include="skin\Admin\nav-bg.jpg" />
+    <Content Include="skin\Admin\nav-item-bg.jpg" />
+    <Content Include="skin\Admin\new.gif" />
+    <Content Include="skin\Admin\noPicture.gif" />
+    <Content Include="skin\Admin\partgradp.gif" />
+    <Content Include="skin\Admin\path-arrow.gif" />
+    <Content Include="skin\Admin\path-bullet.jpg" />
+    <Content Include="skin\Admin\report.css" />
+    <Content Include="skin\Admin\rtbullet.gif" />
+    <Content Include="skin\Admin\rule-node-add-child.gif" />
+    <Content Include="skin\Admin\rule-node-remove.gif" />
+    <Content Include="skin\Admin\SPSSearch2.gif" />
+    <Content Include="skin\Admin\spssites-bak.gif" />
+    <Content Include="skin\Admin\spssites.gif" />
+    <Content Include="skin\Admin\topgrad.gif" />
+    <Content Include="skin\Admin\treeview.css" />
+    <Content Include="skin\Admin\triangle.gif" />
+    <Content Include="skin\Admin\up.gif" />
+    <Content Include="skin\Admin\user.GIF" />
+    <Content Include="skin\Admin\warning24-bak.gif" />
+    <Content Include="skin\Admin\warning24.png" />
+    <Content Include="Admin\icon\addnew.png" />
+    <Content Include="Admin\icon\add_icon_color.gif" />
+    <Content Include="Admin\icon\add_icon_mono.gif" />
+    <Content Include="Admin\icon\administrator.png" />
+    <Content Include="Admin\icon\banking.png" />
+    <Content Include="Admin\icon\Bin - Full.png" />
+    <Content Include="Admin\icon\businesspartner.png" />
+    <Content Include="Admin\icon\cancel.png" />
+    <Content Include="Admin\icon\cancel_hover.png" />
+    <Content Include="Admin\icon\coins.png" />
+    <Content Include="Admin\icon\Date.png" />
+    <Content Include="Admin\icon\delete.gif" />
+    <Content Include="Admin\icon\delete_de.gif" />
+    <Content Include="Admin\icon\delete_icon_color.gif" />
+    <Content Include="Admin\icon\delete_icon_mono.gif" />
+    <Content Include="Admin\icon\delete_on.gif" />
+    <Content Include="Admin\icon\document-preview.png" />
+    <Content Include="Admin\icon\document-print.png" />
+    <Content Include="Admin\icon\Drive - Windows.png" />
+    <Content Include="Admin\icon\E-mail 2.png" />
+    <Content Include="Admin\icon\edit.gif" />
+    <Content Include="Admin\icon\edit_hover.gif" />
+    <Content Include="Admin\icon\edit_icon_color.gif" />
+    <Content Include="Admin\icon\edit_icon_mono.gif" />
+    <Content Include="Admin\icon\email.png" />
+    <Content Include="Admin\icon\Error.png" />
+    <Content Include="Admin\icon\excel.png" />
+    <Content Include="Admin\icon\Favorites.png" />
+    <Content Include="Admin\icon\financial.png" />
+    <Content Include="Admin\icon\first.png" />
+    <Content Include="Admin\icon\Folder - Work.png" />
+    <Content Include="Admin\icon\IconX.png" />
+    <Content Include="Admin\icon\ICQ.png" />
+    <Content Include="Admin\icon\Info.png" />
+    <Content Include="Admin\icon\Internet.png" />
+    <Content Include="Admin\icon\inventory.png" />
+    <Content Include="Admin\icon\last.png" />
+    <Content Include="Admin\icon\link.png" />
+    <Content Include="Admin\icon\mrp.png" />
+    <Content Include="Admin\icon\My Computer 2.png" />
+    <Content Include="Admin\icon\new.gif" />
+    <Content Include="Admin\icon\new_de.gif" />
+    <Content Include="Admin\icon\new_on.gif" />
+    <Content Include="Admin\icon\next.png" />
+    <Content Include="Admin\icon\opportunity.png" />
+    <Content Include="Admin\icon\Outlook Express.png" />
+    <Content Include="Admin\icon\partner.png" />
+    <Content Include="Admin\icon\pdf.png" />
+    <Content Include="Admin\icon\Photocamera.png" />
+    <Content Include="Admin\icon\preview.png" />
+    <Content Include="Admin\icon\previous.png" />
+    <Content Include="Admin\icon\print.png" />
+    <Content Include="Admin\icon\production.png" />
+    <Content Include="Admin\icon\sales.png" />
+    <Content Include="Admin\icon\save.png" />
+    <Content Include="Admin\icon\save_hover.png" />
+    <Content Include="Admin\icon\save_icon_color.gif" />
+    <Content Include="Admin\icon\save_icon_mono.gif" />
+    <Content Include="Admin\icon\Search.png" />
+    <Content Include="Admin\icon\select_row.png" />
+    <Content Include="Admin\icon\select_row_hover.png" />
+    <Content Include="Admin\icon\service.png" />
+    <Content Include="Admin\icon\shopping.png" />
+    <Content Include="Admin\icon\Success.png" />
+    <Content Include="Admin\icon\system-search.png" />
+    <Content Include="Admin\icon\Time.ico" />
+    <Content Include="Admin\icon\Time.png" />
+    <Content Include="Admin\icon\undo_icon_color.gif" />
+    <Content Include="Admin\icon\undo_icon_mono.gif" />
+    <Content Include="Admin\icon\Warning.png" />
+    <Content Include="Admin\icon\Windows 2.png" />
+    <Content Include="Admin\icon\Windows Explorer.png" />
+    <Content Include="Admin\icon\word.png" />
+    <Content Include="skin\images\Abeo Logo.png" />
+    <Content Include="skin\images\AccessDenied.png" />
+    <Content Include="skin\images\activity.png" />
+    <Content Include="skin\images\ajax-loader.gif" />
+    <Content Include="skin\images\banking.png" />
+    <Content Include="skin\images\Bin - Full.png" />
+    <Content Include="skin\images\bk_icontool.png" />
+    <Content Include="skin\images\bk_tab.png" />
+    <Content Include="skin\images\bk_tab_active.png" />
+    <Content Include="skin\images\coins.png" />
+    <Content Include="skin\images\CopyFrom.png" />
+    <Content Include="skin\images\CopyTo.png" />
+    <Content Include="skin\images\data_table_header.png" />
+    <Content Include="skin\images\Date.png" />
+    <Content Include="skin\images\deselectall.png" />
+    <Content Include="skin\images\document-preview.png" />
+    <Content Include="skin\images\document-print.png" />
+    <Content Include="skin\images\Drive - Windows.png" />
+    <Content Include="skin\images\E-mail 2.png" />
+    <Content Include="skin\images\error.gif" />
+    <Content Include="skin\images\Error.png" />
+    <Content Include="skin\images\Favorites.png" />
+    <Content Include="skin\images\Folder - Work.png" />
+    <Content Include="skin\images\IconX.png" />
+    <Content Include="skin\images\ICQ.png" />
+    <Content Include="skin\images\Info.png" />
+    <Content Include="skin\images\Internet.png" />
+    <Content Include="skin\images\inventory.png" />
+    <Content Include="skin\images\item-pointer-mover.gif" />
+    <Content Include="skin\images\item-pointer.gif" />
+    <Content Include="skin\images\lava.gif" />
+    <Content Include="skin\images\lava.png" />
+    <Content Include="skin\images\login_background.png" />
+    <Content Include="skin\images\main-bg.png" />
+    <Content Include="skin\images\main-delimiter.png" />
+    <Content Include="skin\images\mrp.png" />
+    <Content Include="skin\images\My Computer 2.png" />
+    <Content Include="skin\images\Outlook Express.png" />
+    <Content Include="skin\images\paneh.gif" />
+    <Content Include="skin\images\panehc.gif" />
+    <Content Include="skin\images\panev.gif" />
+    <Content Include="skin\images\panevc.gif" />
+    <Content Include="js\jquery-1.4.3.min.js" />
+    <Content Include="js\splitter.js" />
+    <Content Include="skin\images\partner.png" />
+    <Content Include="skin\images\Photocamera.png" />
+    <Content Include="skin\images\production.png" />
+    <Content Include="skin\images\promocode.png" />
+    <Content Include="skin\images\relatedactivity.png" />
+    <Content Include="skin\images\relateddocument.png" />
+    <Content Include="skin\images\SAP_Add.png" />
+    <Content Include="skin\images\SAP_Button.png" />
+    <Content Include="skin\images\SAP_cancel.png" />
+    <Content Include="skin\images\SAP_ChangeCompany.png" />
+    <Content Include="skin\images\SAP_choose.png" />
+    <Content Include="skin\images\SAP_Login.png" />
+    <Content Include="skin\images\SAP_New.png" />
+    <Content Include="skin\images\SAP_OK.png" />
+    <Content Include="skin\images\SAP_ProOrder.png" />
+    <Content Include="skin\images\SAP_update.png" />
+    <Content Include="skin\images\Search.png" />
+    <Content Include="skin\images\selectall.png" />
+    <Content Include="skin\images\service.png" />
+    <Content Include="skin\images\shopping.png" />
+    <Content Include="skin\images\Success.png" />
+    <Content Include="skin\images\system-search.png" />
+    <Content Include="skin\images\Time.ico" />
+    <Content Include="skin\images\Time.png" />
+    <Content Include="skin\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="skin\images\warning.gif" />
+    <Content Include="skin\images\Warning.png" />
+    <Content Include="skin\images\Windows 2.png" />
+    <Content Include="skin\images\Windows Explorer.png" />
+    <Content Include="skin\menu.css" />
+    <Content Include="skin\skin.css" />
+    <Content Include="skin\start\images\ui-bg_flat_55_999999_40x100.png" />
+    <Content Include="skin\start\images\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="skin\start\images\ui-bg_glass_45_0078ae_1x400.png" />
+    <Content Include="skin\start\images\ui-bg_glass_55_f8da4e_1x400.png" />
+    <Content Include="skin\start\images\ui-bg_glass_75_79c9ec_1x400.png" />
+    <Content Include="skin\start\images\ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+    <Content Include="skin\start\images\ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+    <Content Include="skin\start\images\ui-bg_gloss-wave_75_2191c0_500x100.png" />
+    <Content Include="skin\start\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="skin\start\images\ui-icons_0078ae_256x240.png" />
+    <Content Include="skin\start\images\ui-icons_056b93_256x240.png" />
+    <Content Include="skin\start\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="skin\start\images\ui-icons_e0fdff_256x240.png" />
+    <Content Include="skin\start\images\ui-icons_f5e175_256x240.png" />
+    <Content Include="skin\start\images\ui-icons_f7a50d_256x240.png" />
+    <Content Include="skin\start\images\ui-icons_fcd113_256x240.png" />
+    <Content Include="skin\start\jquery-ui.css" />
+    <Content Include="TimeSheet\SubcontractorExpenseEntry.aspx" />
+    <Content Include="TimeSheet\ProjectMandaysUsedByPhaseReport.aspx" />
+    <Content Include="TimeSheet\DirectExpenseEntry.aspx" />
+    <Content Include="TimeSheet\TimesheetPosting.aspx" />
+    <Content Include="TimeSheet\ProjectMandaysUsedReport.aspx" />
+    <Content Include="TimeSheet\TimeEntrySummaryReportByProject.aspx" />
+    <Content Include="TimeSheet\ResourcesPlanning.aspx" />
+    <Content Include="TimeSheet\Pending4ApprTimesheetByPeriod.aspx" />
+    <Content Include="TimeSheet\TimeMyEntryReport.aspx" />
+    <Content Include="TimeSheet\TimeEntryConsolidateReport.aspx" />
+    <Content Include="TimeSheet\TimeEntryMissingReport.aspx" />
+    <Content Include="TimeSheet\TimeEntryReport.aspx" />
+    <Content Include="TimeSheet\Pending4ApprTimeSheet.aspx" />
+    <Content Include="TimeSheet\MyTimeSheet.aspx" />
+    <Content Include="TimeSheet\ProjectManager.aspx" />
+    <Content Include="TimeSheet\TimeEntry.aspx" />
+    <Content Include="TimeSheet\TimeEntryPost2SAP.aspx" />
+    <Content Include="TimeSheet\WeekendTimeSheet.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="Homepage.aspx" />
+    <Content Include="WebServices\NoteGenerateCode.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Constants.cs" />
+    <Compile Include="Admin\MembershipUserCustomize.cs" />
+    <Compile Include="Admin\oExcel.cs" />
+    <Compile Include="Admin\oUsers.cs" />
+    <Compile Include="Admin\SystemRoleEdit.aspx.cs">
+      <DependentUpon>SystemRoleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemRoleEdit.aspx.designer.cs">
+      <DependentUpon>SystemRoleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemRoles.aspx.cs">
+      <DependentUpon>SystemRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemRoles.aspx.designer.cs">
+      <DependentUpon>SystemRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemUserEdit.aspx.cs">
+      <DependentUpon>SystemUserEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemUserEdit.aspx.designer.cs">
+      <DependentUpon>SystemUserEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemUsers.aspx.cs">
+      <DependentUpon>SystemUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemUsers.aspx.designer.cs">
+      <DependentUpon>SystemUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\Data.cs" />
+    <Compile Include="App_Data\ProfileCommon.cs" />
+    <Compile Include="App_Data\RolePermissions.cs" />
+    <Compile Include="App_Data\SqlHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_Data\WebHelper.cs" />
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popup_MoreInfo.aspx.cs">
+      <DependentUpon>Popup_MoreInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popup_MoreInfo.aspx.designer.cs">
+      <DependentUpon>Popup_MoreInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsSummaryofTimesheetDaily.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSummaryofTimesheetDaily.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Popup_CreatePeriod.aspx.cs">
+      <DependentUpon>Popup_CreatePeriod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popup_CreatePeriod.aspx.designer.cs">
+      <DependentUpon>Popup_CreatePeriod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popup_UserList.aspx.cs">
+      <DependentUpon>Popup_UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popup_UserList.aspx.designer.cs">
+      <DependentUpon>Popup_UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popup_MultiProject.aspx.cs">
+      <DependentUpon>Popup_MultiProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popup_MultiProject.aspx.designer.cs">
+      <DependentUpon>Popup_MultiProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popup_EditProject.aspx.cs">
+      <DependentUpon>Popup_EditProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popup_EditProject.aspx.designer.cs">
+      <DependentUpon>Popup_EditProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SummaryOfTimesheetDailyReport.aspx.cs">
+      <DependentUpon>SummaryOfTimesheetDailyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\SummaryOfTimesheetDailyReport.aspx.designer.cs">
+      <DependentUpon>SummaryOfTimesheetDailyReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleLogin.aspx.cs">
+      <DependentUpon>SimpleLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SimpleLogin.aspx.designer.cs">
+      <DependentUpon>SimpleLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralFunctions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\SubcontractorExpenseEntry.aspx.cs">
+      <DependentUpon>SubcontractorExpenseEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\SubcontractorExpenseEntry.aspx.designer.cs">
+      <DependentUpon>SubcontractorExpenseEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\ProjectMandaysUsedByPhaseReport.aspx.cs">
+      <DependentUpon>ProjectMandaysUsedByPhaseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\ProjectMandaysUsedByPhaseReport.aspx.designer.cs">
+      <DependentUpon>ProjectMandaysUsedByPhaseReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\DirectExpenseEntry.aspx.cs">
+      <DependentUpon>DirectExpenseEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\DirectExpenseEntry.aspx.designer.cs">
+      <DependentUpon>DirectExpenseEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\TimesheetPosting.aspx.cs">
+      <DependentUpon>TimesheetPosting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\TimesheetPosting.aspx.designer.cs">
+      <DependentUpon>TimesheetPosting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\ProjectMandaysUsedReport.aspx.cs">
+      <DependentUpon>ProjectMandaysUsedReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\ProjectMandaysUsedReport.aspx.designer.cs">
+      <DependentUpon>ProjectMandaysUsedReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\TimeEntrySummaryReportByProject.aspx.cs">
+      <DependentUpon>TimeEntrySummaryReportByProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\TimeEntrySummaryReportByProject.aspx.designer.cs">
+      <DependentUpon>TimeEntrySummaryReportByProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\ResourcesPlanning.aspx.cs">
+      <DependentUpon>ResourcesPlanning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\ResourcesPlanning.aspx.designer.cs">
+      <DependentUpon>ResourcesPlanning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\Pending4ApprTimesheetByPeriod.aspx.cs">
+      <DependentUpon>Pending4ApprTimesheetByPeriod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\Pending4ApprTimesheetByPeriod.aspx.designer.cs">
+      <DependentUpon>Pending4ApprTimesheetByPeriod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\TimeMyEntryReport.aspx.cs">
+      <DependentUpon>TimeMyEntryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\TimeMyEntryReport.aspx.designer.cs">
+      <DependentUpon>TimeMyEntryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\TimeEntryConsolidateReport.aspx.cs">
+      <DependentUpon>TimeEntryConsolidateReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\TimeEntryConsolidateReport.aspx.designer.cs">
+      <DependentUpon>TimeEntryConsolidateReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\TimeEntryMissingReport.aspx.cs">
+      <DependentUpon>TimeEntryMissingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\TimeEntryMissingReport.aspx.designer.cs">
+      <DependentUpon>TimeEntryMissingReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\TimeEntryReport.aspx.cs">
+      <DependentUpon>TimeEntryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\TimeEntryReport.aspx.designer.cs">
+      <DependentUpon>TimeEntryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\Pending4ApprTimeSheet.aspx.cs">
+      <DependentUpon>Pending4ApprTimeSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\Pending4ApprTimeSheet.aspx.designer.cs">
+      <DependentUpon>Pending4ApprTimeSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\ProjectManager.aspx.cs">
+      <DependentUpon>ProjectManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\ProjectManager.aspx.designer.cs">
+      <DependentUpon>ProjectManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\TimeEntryMain.Master.cs">
+      <DependentUpon>TimeEntryMain.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\TimeEntryMain.Master.designer.cs">
+      <DependentUpon>TimeEntryMain.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\MyTimeSheet.aspx.cs">
+      <DependentUpon>MyTimeSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\MyTimeSheet.aspx.designer.cs">
+      <DependentUpon>MyTimeSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\TimeEntry.aspx.cs">
+      <DependentUpon>TimeEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\TimeEntry.aspx.designer.cs">
+      <DependentUpon>TimeEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\TimeEntryPost2SAP.aspx.cs">
+      <DependentUpon>TimeEntryPost2SAP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\TimeEntryPost2SAP.aspx.designer.cs">
+      <DependentUpon>TimeEntryPost2SAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet\WeekendTimeSheet.aspx.cs">
+      <DependentUpon>WeekendTimeSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet\WeekendTimeSheet.aspx.designer.cs">
+      <DependentUpon>WeekendTimeSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebServices\Entity\AccountMasterData.cs" />
+    <Compile Include="WebServices\Entity\BusinessPartner.cs" />
+    <Compile Include="WebServices\Entity\ContactPerson.cs" />
+    <Compile Include="WebServices\Entity\BOM.cs" />
+    <Compile Include="WebServices\Entity\CostCenter.cs" />
+    <Compile Include="WebServices\Entity\Territory.cs" />
+    <Compile Include="WebServices\Entity\Promotion.cs" />
+    <Compile Include="WebServices\GetDefault.cs" />
+    <Compile Include="WebServices\Entity\SalesBuyerMasterData.cs" />
+    <Compile Include="WebServices\Entity\Project.cs" />
+    <Compile Include="WebServices\Entity\EmployeeMasterData.cs" />
+    <Compile Include="WebServices\Entity\ItemMaster.cs" />
+    <Compile Include="WebServices\MasterData.cs" />
+    <Compile Include="WebServices\Entity\TaxGroup.cs" />
+    <Compile Include="WebServices\Reports.cs" />
+    <Compile Include="WebServices\Transaction.cs" />
+    <Compile Include="WebServices\Entity\WareHouse.cs" />
+    <Compile Include="xml\DocumentXML.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="skin\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.Master" />
+    <Content Include="skin\Admin\Default.skin" />
+    <Content Include="TimeSheet\TimeEntryMain.Master" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Reports\dsSummaryofTimesheetDaily.xsc">
+      <DependentUpon>dsSummaryofTimesheetDaily.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsSummaryofTimesheetDaily.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSummaryofTimesheetDaily.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\dsSummaryofTimesheetDaily.xss">
+      <DependentUpon>dsSummaryofTimesheetDaily.xsd</DependentUpon>
+    </None>
+    <None Include="WebServices\GenerateCodeWSDLGetDefault.bat" />
+    <None Include="WebServices\GenerateCodeWSDLMasterData.bat" />
+    <None Include="WebServices\GenerateCodeWSDLReports.bat" />
+    <None Include="WebServices\GenerateCodeWSDLTransaction.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\SystemRoleEdit.aspx.es.resx" />
+    <Content Include="Admin\App_LocalResources\SystemRoleEdit.aspx.resx" />
+    <Content Include="Admin\App_LocalResources\SystemRoles.aspx.es.resx" />
+    <Content Include="Admin\App_LocalResources\SystemRoles.aspx.resx" />
+    <Content Include="Admin\App_LocalResources\SystemUserEdit.aspx.es.resx" />
+    <Content Include="Admin\App_LocalResources\SystemUserEdit.aspx.resx" />
+    <Content Include="Admin\App_LocalResources\SystemUsers.aspx.es.resx" />
+    <Content Include="Admin\App_LocalResources\SystemUsers.aspx.resx" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Reports\rptSummaryofTimesheetDaily.rdlc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>22589</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

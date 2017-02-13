@@ -1,0 +1,24 @@
+E:\SVN\TimeSheet\ ai-ts\SAP\bin\SAP.dll
+E:\SVN\TimeSheet\ ai-ts\SAP\bin\SAP.pdb
+E:\SVN\TimeSheet\ ai-ts\SAP\obj\Debug\ResolveAssemblyReference.cache
+E:\SVN\TimeSheet\ ai-ts\SAP\obj\Debug\SAP.dll.licenses
+E:\SVN\TimeSheet\ ai-ts\SAP\obj\Debug\RdlCompile.cache
+E:\SVN\TimeSheet\ ai-ts\SAP\obj\Debug\RdlCompile.compiled
+E:\SVN\TimeSheet\ ai-ts\SAP\obj\Debug\SAP.dll
+E:\SVN\TimeSheet\ ai-ts\SAP\obj\Debug\SAP.pdb
+E:\ai-ts\SAP\bin\SAP.dll
+E:\ai-ts\SAP\bin\SAP.pdb
+E:\ai-ts\SAP\obj\Debug\ResolveAssemblyReference.cache
+E:\ai-ts\SAP\obj\Debug\SAP.dll.licenses
+E:\ai-ts\SAP\obj\Debug\RdlCompile.cache
+E:\ai-ts\SAP\obj\Debug\RdlCompile.compiled
+E:\ai-ts\SAP\obj\Debug\SAP.dll
+E:\ai-ts\SAP\obj\Debug\SAP.pdb
+E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\SAP\bin\SAP.dll
+E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\SAP\bin\SAP.pdb
+E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\SAP\obj\Debug\TimeSheet.csprojResolveAssemblyReference.cache
+E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\SAP\obj\Debug\SAP.dll.licenses
+E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\SAP\obj\Debug\RdlCompile.cache
+E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\SAP\obj\Debug\RdlCompile.compiled
+E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\SAP\obj\Debug\SAP.dll
+E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\SAP\obj\Debug\SAP.pdb

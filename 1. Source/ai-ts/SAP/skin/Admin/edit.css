@@ -1,0 +1,760 @@
+﻿/* Edit Region */
+div.EditRegion div {
+    margin: 0.7em 0 0.7em 0; 
+	clear: left;
+}
+
+div.EditRegion div label {
+    display: block;
+    float: left;
+    width: 13em;
+	font-weight: bolder;	
+}
+
+div.EditRegion div.items {
+    margin-top: 2.5em;
+    font-weight: lighter;
+    clear: left;
+}
+
+div.EditRegion div.items-child {
+    margin-top: 2.5em;
+    margin-left: 3.5em;
+    font-weight: lighter;
+    clear: left;
+}
+
+div.EditRegion div.items label,
+div.EditRegion div.items-child label {
+    display: block;
+    float: left;
+    padding-left: 2em;
+    width: 12em;
+    height: 2em;
+}
+
+div.EditRegion div.items select{
+    display: inline;
+    float: left;
+    margin-left: 1em;
+    width: 30em;
+}
+
+div.EditRegion div span.Padding {
+	padding-left: 3em;
+}
+
+div.Header {
+	font-weight:bold;
+	font-size:1.2em;
+}
+
+div div.TextBlock {
+	display: inline-block;
+	margin-left: 12em;
+}
+
+/*IE*/
+*html body div div.TextBlock {
+	display: block;
+}
+
+div span.RadioButtonBlock label {
+	color: #000000;
+	font-weight: normal;
+	float: none;
+	display: inline;
+}
+
+div.EditRegion div span.FieldValues {
+    padding-left: 2.2em;
+}
+
+div.EditRegion div span.VerticalLine {
+    border: solid 0.1em #7ea0e6;
+    margin: 0 0.5em;
+}
+
+div.EditRegionSmallLabel div {
+    margin: 0.7em 0 0.7em 1.2em;
+}
+
+div.EditRegionSmallLabel div label {
+    display: block;
+    float: left;
+    width: 7em;
+    clear: left;
+    font-weight: bolder;
+}
+
+div.EditRegion div label.TimeHeader {
+    display: block;
+    float: left;
+    width: 14.2em;
+    clear: left;
+    font-weight: bolder;
+    margin-left: 12em;
+}
+
+div.EditRegionSmallLabel div span.FieldValues {
+    padding-left: 2.2em;
+}
+
+.InputBox {
+    width: 300px;
+}
+
+.InputBoxSmall {
+    width: 100px;    
+}
+
+.InputBoxMedium {
+    width: 142.5px;
+}
+
+.InputBoxLarge {
+    width: 500px;
+}
+
+.InputBoxAnswer {
+    width: 400px;    
+}
+
+a.Blue {  
+    color: Blue;
+}
+
+
+.ButtonLarge {
+    width: 8em;
+}
+
+
+span.InputInfo {
+    font-weight: lighter;
+    font-style: italic;
+    color: #666666;
+}
+
+span.RequiredField {
+    padding-left: 0.5em;
+    color: #ff0000;
+    font-weight: normal;
+}
+
+div.Action {
+    padding-top: 1em;
+}
+
+.CheckBox input {
+    margin-left: -0.1em;
+}
+
+.CheckBox label {
+    padding-left: .2em;
+    padding-right: 1em;    
+    width: auto !important;
+    float: none !important;
+    clear: none !important;
+    display: inline !important;
+    font-weight: normal !important;
+}
+
+.List {
+	width: 15em;
+}
+
+div.FreeTextBox div,
+div.FreeTextBox div {
+    margin: 0 !important;
+}
+
+/* End of EditRegion */
+
+#postHeaderBlock textarea,
+#postDataBlock textarea {	
+	float: left;
+	margin-bottom: 0.7em;
+	
+}
+
+span.InsertBlock {
+	display: block;
+	float: left;
+	
+}
+
+span.InsertBlock select {	
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+	margin-left: 0.5em;
+}
+
+span.InsertBlock input {
+	margin-left: 0.5em;
+}
+
+/*IE*/
+*html body #postHeaderBlock textarea,
+*html body #postDataBlock textarea {
+	margin-left: 0.3em;
+}
+
+
+/* For Info web page */
+div.InfoRegion {	
+    border: none;
+    margin: 0em; 
+    padding-top: 0.5em;   
+    margin-left: 0.2em;
+}
+
+div.InfoRegionForReceipt {	
+    border: none;
+    margin: 0em; 
+    font-size:100%;
+    padding-top: 0.5em;   
+    margin-left: 1em;
+}
+
+div.DetailTitle {		
+	margin-top: 0.5em;	
+	display: block;
+	background-color: #B6CBEF;
+}
+
+div.DetailTitle span {
+	font-size: 1.5em;
+	margin-left: 0.2em;
+	color: Black;
+}
+
+div.InfoRow {
+	width: 100%;
+	overflow: hidden;
+	_height: 1%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+div.LeftInfoRow {
+	width: 100%;
+	overflow: hidden;
+	_height: 1%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+div.MiddleInfoRow {
+	width: 100%;
+	overflow: hidden;
+	_height: 1%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align:center;
+}
+
+span.TitleLabel {
+	float: left;
+	display: block;	
+	/*
+	line-height: 2em;	
+*/
+    width: 14em;
+    color: #A6B3BB;
+    font-weight: bold;    
+}
+
+span.TitleLabelForReceipt {
+	float: left;
+	position: relative;
+	/*display: block;	*/
+    width: 160px;
+    padding-left: 12em;
+}
+
+span.InfoLabel {
+	float: left;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	/*
+	overflow: auto;
+    */
+	/*
+    display: block;
+    */
+    width: 50em;
+    
+} 
+
+span.InfoLabelSmall {
+	float: left;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	/*
+	overflow: auto;
+    */
+	/*
+    display: block;
+    */
+    width: 30em;
+    
+} 
+
+div.ButtonRow {
+	display: block;
+	position: relative;
+	line-height: 3em !important;		
+	vertical-align: bottom;
+	margin-top: 0.5em;
+}
+
+/* filter style sheet */
+div.OuterBoxFilter {
+	border: solid 1px #7ea0e6;	
+	margin: 2px 2px 2px 0px;
+	padding: 5px;		
+}
+
+div.FilterRow {
+	line-height: 2em;	
+	height: 2.3em;	
+	overflow: visible;
+	width: 800px;
+}
+
+div.FilterColumnLeft {	
+	position: relative;
+	float: left;
+	width: 400px;
+	height: 2em;
+}
+
+div.FilterColumnRight {	
+	position: relative;
+	float: left;
+	width: 380px;
+}
+
+div.FilterColumnButton {
+    margin-left: 13em;
+	position: relative;
+	float: left;
+	width: 380px;
+}
+
+div.FilterColumnFull {	
+	position: relative;
+	float: left;
+	width: 780px;
+}
+
+label.FilterMessageTitle {
+	display: block;
+	position: absolute;
+	width: 17em;
+	top: 0;
+	left: 0;
+}
+
+div.FilterButton {
+    float: right;
+    display: inline-block;    
+}
+
+div.FilterRow .FilterInput {
+	margin-left: 11em;
+	line-height: normal;
+	top: 0;
+	width: 144px;
+}
+
+div.FilterRow .FilterInputForCheckBox {
+	margin-left: 12.9em;
+	line-height: normal;
+	top: 0;
+	width: 144px;
+}
+
+div.FilterRow .FilterDiv {
+	margin-left: 11em;
+	top: 0;
+	width: 144px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+fieldset#connectionSessionHistoryFilterFieldset label.FilterMessageTitle {
+    width: 10em;
+}
+
+fieldset#mPaymentBankPostsFilter label.FilterMessageTitle ,
+fieldset#ubPaymentBankPostsFilter label.FilterMessageTitle ,
+fieldset#pichinchaBankPostsFilter label.FilterMessageTitle ,
+fieldset#serviceInstanceFilterFieldset label.FilterMessageTitle, 
+fieldset#remotePaymentBankPostsFilter label.FilterMessageTitle,
+fieldset#remotePaymentTransactionFilter label.FilterMessageTitle {
+    width: 14em;
+}
+
+fieldset#remotePaymentQueryChargeLogsFilter label.FilterMessageTitle {
+    width: 16em;
+}
+
+fieldset#remotePaymentQueryChargeLogsFilter div.FilterRow .FilterInput  {
+    margin-left: 14em;
+}
+
+/* Start Style For Service Instance List */
+
+div#servicesSummaryAndListingContainer legend {
+    display: inline;
+}
+
+div#servicesSummaryAndListingContainer legend#summary {
+    font-weight: bold;
+}
+
+div#servicesSummaryAndListingContainer ul {
+    margin-left: 40px;
+}
+
+/* End Style For Service Instance List */
+
+/* Start Style For Monitor Detail */
+div#monitorDetail legend {
+    display: inline;
+}
+
+div#monitorDetail legend#summary {
+    font-weight: bold;
+}
+
+div#monitorDetail ul {
+    margin-left: 40px;
+}
+
+
+div#monitorDetail table.ConnectionSession {
+    font-size: 0.9em;     
+}
+
+table tr td div.Initializing {   
+    background-color: Purple;
+}
+
+table tr td div.Connected {
+    background-color: Green;
+}
+
+table tr td div.StartPending {
+    background-color: #008000;
+    text-decoration: blink;
+}
+
+table tr td div.Running {
+    background-color: #008000;
+}
+
+table tr td div.ContinuePending,
+table tr td div.Error {
+	color: yellow;
+	background-color: red;
+}
+
+table tr td div.Disconnected {
+	background-color: Gray;
+	text-decoration: line-through;
+}
+
+table tr td div.StopPending {
+    background-color: #808080;
+    text-decoration: blink;
+}
+
+table tr td div.Stopped {
+    background-color: #808080;
+    text-decoration: line-through;
+}
+
+table tr td div.PausePending,
+table tr td div.Reconnecting {
+	background-color: Fuchsia;
+	text-decoration: blink;
+}
+
+table tr td div.Paused {
+	background-color: Fuchsia;
+}
+
+table tr td div.Healthy {
+	background-color: Blue;
+	border: solid 1px black;    
+}
+
+table tr td  div.Unknown {
+    background-color: #000000;    
+}
+
+table tr td div.StartPending, 
+table tr td div.Running,
+table tr td div.PausePending,
+table tr td div.Paused,
+table tr td div.StopPending,
+table tr td div.Stopped,
+table tr td ContinuePending,
+table tr td div.Unknown,
+table tr td div.Initializing,
+table tr td div.Connected,
+table tr td div.Disconnected,
+table tr td div.Error,
+table tr td div.Reconnecting,
+table tr td div.Healthy {
+    color: #FFFFFF;    
+	font-weight: bold;
+	text-align: center;
+}
+
+/* End Style For Monitor Detail */
+
+/* Start Style For MTSendHistory */
+fieldset#mtSendHistoryListFieldSet legend,
+fieldset#moReceiptsListFieldSet legend {
+    display: inline;
+    font-size: 1.5em;
+}
+
+fieldset#moReceiptsListFieldSet {
+    margin-top: 10px;
+}
+
+/* End Style For MTSendHistory */
+
+/* Start Style For Message Statistics */
+div#messageStatisticsContainer {
+    width: 810px;
+}
+
+div#messageStatisticsContainer input.DatePickerButton {
+    width: 20px;
+}
+
+div#messageStatisticsContainer fieldset {
+    border: solid 1px #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 6px 10px 6px 10px;
+}
+
+div#messageStatisticsContainer fieldset legend {
+    display: inline;
+    margin-left: 10px;
+}
+
+fieldset#filterOption div.Row {
+    clear: left;
+}
+
+div#reportTypeOption fieldset.ReportOptionsColumn {
+    float: left;
+    width: 350px;
+}
+
+*html div#reportTypeOption fieldset.ReportOptionsColumn {
+    float: left;
+    width: 350px;
+    margin-left: 5px;
+}
+
+
+div#reportTypeOption fieldset.ReportOptionsColumn legend {
+    display: none;
+}
+
+div#messageStatisticsContainer fieldset div.Row span.Column {
+    width: 250px;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div#messageStatisticsContainer fieldset#filterOption label {
+    float: left;
+    width: 70px;
+}
+
+div#messageStatisticsContainer label {
+    margin-top: 5px;
+}
+
+
+div#messageStatisticsContainer div.Export {    
+    position: absolute;
+    top: 348px;
+    left: 90px;
+}
+
+*html div#messageStatisticsContainer div.Export {    
+    position: absolute;
+    top: 340px;
+    left: 85px;
+}
+
+div#messageStatisticsContainer div.ExportIE {    
+    position: absolute;
+    top: 355px;
+    left: 85px;
+}
+
+div#messageStatisticsContainer div.ExportEmpty {
+    position: absolute;
+    top: 386px;
+    left: 90px;
+}
+
+*html div#messageStatisticsContainer div.ExportEmpty {
+    position: absolute;
+    top: 380px;
+    left: 85px;
+}
+
+
+div#messageStatisticsContainer fieldset#reportResultFieldset {
+    border: 0pt none;
+    padding: 0px;    
+}
+
+div#messageStatisticsContainer fieldset#reportResultFieldset legend {
+    display: none;    
+}
+
+/*
+div#messageStatisticsContainer fieldset#reportResultFieldset thead th {
+	background: #F1F8FD;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #0B4975;
+	font-weight: bold;
+}
+
+div#messageStatisticsContainer fieldset#reportResultFieldset thead th#group, 
+div#messageStatisticsContainer fieldset#reportResultFieldset thead th#group {
+    text-align: left;
+}
+
+div#messageStatisticsContainer fieldset#reportResultFieldset thead th#count {
+    text-align: right;
+}
+*/
+/* End Style For Message Statistics */
+
+select.ApplicationStatus {
+    width: 220px !important;
+}
+
+/*
+  Start Service Monitor
+ author: Le Thanh Hung
+*/
+div#serviceMonitorPage table {
+  font-size: 1em;
+}
+
+table.ServiceMonitor {
+    width: 68em;    
+}
+
+table.ServiceMonitor tr.Header {
+    /*
+    font-size: 1.5em;
+    */
+}
+table.ServiceMonitor tr.Header td.RelatedParameters{
+   text-align: center;
+}
+table.ServiceMonitor tr td.Parameter {
+    width: 400px;
+    text-align: center;
+}
+table.ServiceMonitor tr td.Parameter table {
+    width: 100%;
+}
+table.ServiceMonitor tr td.Parameter table tr td {
+    width: 200px;
+    text-align: center;
+    border: solid 1px black;    
+}
+table.ServiceMonitor tr.ParameterDescription {
+    background-color: orange;
+}
+table.ServiceMonitor tr td div.Status {
+    width: 120px;
+    height: 40px;
+    padding: 1.2em 1.5em 0em 1.5em; 
+    margin: 0;
+    border: solid 1px black;
+    text-align: center;
+    color: White;
+    font-weight: bold;
+}
+table.ServiceMonitor .Action a {
+    text-decoration: underline;    
+}
+
+#refreshForm {
+    border: solid 1px black;
+    width: 200px;  
+    color: White;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em; 
+    margin-left: 40%;
+}
+
+#refreshForm input {
+    text-align: right;
+    border: solid 1px blue;
+}
+
+#refreshForm #title {
+    background-color: #66CBFF; 
+    width: auto;
+}
+
+table.ServiceMonitor .Running {
+    background-color: #66CBFF;
+}
+
+table.ServiceMonitor .Error {
+    background-color: #FF0000;
+}
+
+table.ServiceMonitor .Stopped {
+    background-color: #008000;
+}
+
+table.ServiceMonitor .Pending {
+    background-color: #F1F8FD;
+    color: black !important;
+    text-decoration: blink;
+}
+/* End Service monitor */
+
+.invisible
+{
+	display: none;
+}
+.CustomDropDownList {
+	margin-left: 11em;
+    width: auto;
+}
+.CustomDropDownListClick {
+	margin-left: 11em;
+    width: auto;
+}

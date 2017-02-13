@@ -1,0 +1,180 @@
+﻿/*=====================================================================*/
+/*USER PROFILE SECTION*/
+#user-main
+{
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    width: 930px;
+    margin: 10px 0px 0px 50px;
+    padding-top: 23px;
+    padding-bottom: 100px;
+}   
+.user-header 
+{
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 2.24em;
+    color: #DD4B39;
+    font: arial, helvetica, sans-serif;
+    margin: 0 0 .92em;
+    border-bottom: 1px solid #B6B0CC;
+} 
+        
+#user-left
+{
+    width: 460px;
+    float:left;
+}   
+#user-right
+{
+    width: 460px;
+    float:right;
+}   
+#user-roles
+{            
+    width:100%;
+    padding-top:230px;
+    padding-bottom:10px;
+    border-bottom: 1px solid #B6B0CC;
+}  
+#user-filter
+{            
+    width:100%;
+    padding-bottom:10px;
+    border-bottom: 1px solid #B6B0CC;
+    margin-bottom: 20px;
+} 
+
+#user-section
+{            
+    width:100%;
+    padding-bottom:10px;
+    border-bottom: 1px solid #B6B0CC;
+    margin-bottom: 20px;
+} 
+
+#user-default
+{            
+    width:100%;
+    padding-bottom:10px;
+}  
+
+.user-default-header 
+{
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 1.24em;
+    color: #DD4B39;
+    font: arial, helvetica, sans-serif;
+    margin: 0.92em 0 .92em;
+    border-bottom: 1px solid #B6B0CC;
+} 
+#user-submit
+{            
+    width:100%;
+    padding-top:10px;
+}  
+
+.FilterInput {
+    height: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.user-attribute 
+{
+    line-height: 40px;
+}
+        
+.user-attribute td:first-child {
+    width: 25%;
+}
+        
+.user-main input {
+    display: inline-block;
+    height: 29px;
+    margin: 0;
+    padding: 0 8px;
+    background: white;
+    border: 1px solid #D9D9D9;
+    border-top: 1px solid silver;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+        
+.g-button-submit {
+    border: 1px solid #3079ED;
+    color: white;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    background-color: #4D90FE;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#4D90FE),to(#4787ED));
+    background-image: -webkit-linear-gradient(top,#4D90FE,#4787ED);
+    background-image: -moz-linear-gradient(top,#4D90FE,#4787ED);
+    background-image: -ms-linear-gradient(top,#4D90FE,#4787ED);
+    background-image: -o-linear-gradient(top,#4D90FE,#4787ED);
+    background-image: linear-gradient(top,#4D90FE,#4787ED);
+    height: 25px;
+    line-height: 25px;
+    vertical-align: bottom;
+    margin: 0;
+}
+
+.g-button-filter {
+    border: 1px solid #3079ED;
+    color: white;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    background-color: #4D90FE;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#4D90FE),to(#4787ED));
+    background-image: -webkit-linear-gradient(top,#4D90FE,#4787ED);
+    background-image: -moz-linear-gradient(top,#4D90FE,#4787ED);
+    background-image: -ms-linear-gradient(top,#4D90FE,#4787ED);
+    background-image: -o-linear-gradient(top,#4D90FE,#4787ED);
+    background-image: linear-gradient(top,#4D90FE,#4787ED);
+    height: 20px;
+    line-height: 20px;
+    vertical-align: bottom;
+}
+
+.g-button {
+    min-width: 75px;
+}
+
+
+/*=====================================================================*/
+/*ROLE PERMISSION SECTION*/    
+
+#user-main table {
+  border-right: 0.1em solid #FFFFFF;
+    border-top: 0.1em solid #FFFFFF;
+    border-collapse: collapse;
+    border-bottom: 1px solid #7ea0e6;
+    border-left: 1px solid #7ea0e6; 
+    padding-left: 5px; 
+    font-family: Tahoma;   
+    text-align: left;
+    margin-top: 10px;
+    width: 895px;
+}
+
+#user-main th {
+  background-color: #B6CBEF;
+  height: 2em;
+  font-weight: bold;
+  border-width: 0;
+  padding: 0.2em 0;
+  border-bottom: #500002 solid 0.2em;
+  border-right: #7ea0e6 solid 0.1em;
+}
+
+
+#user-main td {
+  border-right: #7ea0e6 solid 0.1em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  height: 2em;
+  border-bottom: 1px dotted #7ea0e6;
+  background-color: #ffffff;
+}

@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TimeEntryMain.Master.cs" Inherits="SAP.TimeEntryMain" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <%--<script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+
+    <script type="text/javascript" src="../js/splitter.js"></script>
+    <script type="text/javascript" src="../js/menu.js"></script>
+    <script type="text/javascript" src="../js/dialog.js"></script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+     <script type="text/javascript" src="../js/accordion.js"></script>
+    <link href="../skin/menu.css" rel="stylesheet" type="text/css" />
+
+    <link href="../skin/start/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../skin/skin.css" rel="stylesheet" type="text/css" />--%>
+
+    <script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="/js/splitter.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/dialog.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/accordion.js"></script>
+    <link href="/skin/start/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="/skin/skin.css" rel="stylesheet" type="text/css" />
+    <link href="/skin/menu.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <form id="form1" runat="server" method="post" enctype="multipart/form-data">
+        <asp:ScriptManager ID="ScriptManagerMain" runat="server">
+        </asp:ScriptManager>
+        <input type="hidden" id="isMainPage" value="1" />
+        <div style="font-family: Tahoma; font-size: x-small; color: #0000FF; font-weight: bold; padding-left: 22px;">
+            <asp:Button ID="Button1" runat="server" Height="31px" Text="Weekly Entry" 
+                                                Width="82px" Font-Size="12px" 
+                            onclick="btnWeeklyEntry_Click" />
+            <asp:Button ID="btnMyEntry0" runat="server" Height="31px" Text="My Entry" 
+                                                Width="82px" Font-Size="12px" 
+                            onclick="btnMyEntry_Click" />
+            <asp:Button ID="btnPending" runat="server" Height="31px" Text="Pending" 
+                                                Width="82px" Font-Size="12px" onclick="btnPending_Click" 
+                             />
+            Welcome, <asp:LoginName ID="LoginName1" runat="server" />
+                <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggedOut="LoginStatus1_LoggedOut"/>
+            &nbsp;| <a href="../ChangePassword.aspx">Change Password</a></div>
+        
+        <br />
+ 
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
