@@ -8,3 +8,13 @@ E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\WebService\obj\Debug\SBOWebService.vbproj
 E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\WebService\obj\Debug\SBOWebService.dll
 E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\WebService\obj\Debug\SBOWebService.xml
 E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\WebService\obj\Debug\SBOWebService.pdb
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\WebService\bin\SBOWebService.dll
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\WebService\bin\SBOWebService.pdb
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\WebService\bin\SBOWebService.xml
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\WebService\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\WebService\obj\Debug\SBOWebService.vbproj.ResolveComReference.cache
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\WebService\obj\Debug\SBOWebService.Resources.resources
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\WebService\obj\Debug\SBOWebService.vbproj.GenerateResource.Cache
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\WebService\obj\Debug\SBOWebService.dll
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\WebService\obj\Debug\SBOWebService.xml
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\WebService\obj\Debug\SBOWebService.pdb

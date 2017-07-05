@@ -22,3 +22,11 @@ E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\SAP\obj\Debug\RdlCompile.cache
 E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\SAP\obj\Debug\RdlCompile.compiled
 E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\SAP\obj\Debug\SAP.dll
 E:\Abeo Projects\TimeSheet\ai-ts\ai-ts\SAP\obj\Debug\SAP.pdb
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\SAP\bin\SAP.dll
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\SAP\bin\SAP.pdb
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\SAP\obj\Debug\TimeSheet.csprojResolveAssemblyReference.cache
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\SAP\obj\Debug\SAP.dll.licenses
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\SAP\obj\Debug\RdlCompile.cache
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\SAP\obj\Debug\RdlCompile.compiled
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\SAP\obj\Debug\SAP.dll
+E:\Abeo Projects\Timesheet Web\1. Source\ai-ts\SAP\obj\Debug\SAP.pdb
