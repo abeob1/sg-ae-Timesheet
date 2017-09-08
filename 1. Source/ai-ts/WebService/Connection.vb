@@ -108,7 +108,7 @@ Public Class Connection
     Public Shared Sub WriteLog(ByVal Str As String)
         Dim oWrite As IO.StreamWriter
         Dim FilePath As String
-        FilePath = "D:\SBOWEB.txt"
+        FilePath = System.Configuration.ConfigurationManager.AppSettings("LogPath")
 
         If IO.File.Exists(FilePath) Then
             oWrite = IO.File.AppendText(FilePath)
